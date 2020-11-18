@@ -1,6 +1,6 @@
 ## Health Heaven  
 ### Introduction  
-This project is developed by 2020S2 Elec5619 Group 3. It is developed with Spring MVC + Hiberante.   
+It is developed with Spring MVC + Hiberante.   
 
 ### Environment  
 Java >=1.8  
