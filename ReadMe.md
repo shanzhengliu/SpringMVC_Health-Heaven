@@ -10,7 +10,7 @@ Tomcat == 9.0.31
 
 ### installation  
 1: use ```cd``` to reach your target path     
-2：git clone ```https://github.sydney.edu.au/sliu3017/ELEC5619Group3-2020S2.git``` 
+2：git clone ```https://github.com/shanzhengliu/SpringMVC_Health-Heaven.git``` 
 3: Import the project  
 4: set up tomcat  
 5: run  
