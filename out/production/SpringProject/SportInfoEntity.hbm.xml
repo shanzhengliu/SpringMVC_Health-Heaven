@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.sam.pojo.SportInfoEntity" table="5619_SportInfo" schema="elec5619">
+        <id name="sportId">
+            <column name="Sport_ID" sql-type="int(11)"/>
+        </id>
+        <property name="sportName">
+            <column name="sport_name" sql-type="text"/>
+        </property>
+        <property name="sportType">
+            <column name="sport_type" sql-type="text"/>
+        </property>
+        <property name="sportDetail">
+            <column name="sport_detail" sql-type="text"/>
+        </property>
+        <property name="sportComment">
+            <column name="sport_comment" sql-type="text"/>
+        </property>
+        <property name="cost">
+            <column name="cost" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>

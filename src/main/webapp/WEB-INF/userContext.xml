@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="UserServiceImp" class="com.sam.service.userservice.UserServiceImp"></bean>
+    <bean name="UserDaoImp" class="com.sam.dao.User.UserDaoImp"></bean>
+    <bean name="LoginPage" class="com.sam.controller.LoginPage"></bean>
+    <bean name="CommunityPage" class="com.sam.controller.CommunityPage"></bean>
+    <bean name="PostService" class="com.sam.service.PostService"></bean>
+    <bean name="PostDao" class="com.sam.dao.PostDao"></bean>
+</beans>

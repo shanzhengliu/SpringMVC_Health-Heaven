@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.sam.pojo.UserEntity" table="5619_User" schema="elec5619">
+        <id name="userId">
+            <column name="user_ID" sql-type="int(11)"/>
+        </id>
+        <property name="email">
+            <column name="email" sql-type="varchar(150)" length="150"/>
+        </property>
+        <property name="username">
+            <column name="username" sql-type="text"/>
+        </property>
+        <property name="password">
+            <column name="password" sql-type="text"/>
+        </property>
+        <property name="history">
+            <column name="history" sql-type="text"/>
+        </property>
+        <property name="height">
+            <column name="height" sql-type="float" precision="-1"/>
+        </property>
+        <property name="weight">
+            <column name="weight" sql-type="float" precision="-1"/>
+        </property>
+        <property name="age">
+            <column name="age" sql-type="float" precision="-1"/>
+        </property>
+        <property name="targetWeight">
+            <column name="target_weight" sql-type="float" precision="-1"/>
+        </property>
+        <property name="targetDate">
+            <column name="target_date" sql-type="int(11)"/>
+        </property>
+        <property name="sex">
+            <column name="sex" sql-type="text"/>
+        </property>
+    </class>
+</hibernate-mapping>

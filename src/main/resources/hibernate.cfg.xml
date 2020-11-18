@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://108.166.207.184:3306/elec5619</property>
+        <property name="connection.username">elec5619</property>
+        <property name="connection.password">elec5619</property>
+
+        <!--        <mapping resource="SamexerpienceEntity.hbm.xml"/>-->
+<!--        <mapping class="com.sam.pojo.SamexerpienceEntity"/>-->
+        <mapping class="com.sam.pojo.FoodExpenseEntity"/>
+        <mapping resource="FoodExpenseEntity.hbm.xml"/>
+
+        <mapping class="com.sam.pojo.ProductEntity"/>
+        <mapping resource="ProductEntity.hbm.xml"/>
+
+        <mapping class="com.sam.pojo.SportInfoEntity"/>
+        <mapping resource="SportInfoEntity.hbm.xml"/>
+
+        <mapping class="com.sam.pojo.UserEntity"/>
+        <mapping resource="UserEntity.hbm.xml"/>
+
+        <mapping class="com.sam.pojo.ExerciseRecordEntity"/>
+        <mapping resource="ExerciseRecordEntity.hbm.xml"/>
+
+        <mapping class="com.sam.pojo.FoodRecordEntity"/>
+        <mapping resource="FoodRecordEntity.hbm.xml"/>
+
+
+        <mapping class="com.sam.pojo.PostEntity"/>
+        <mapping resource="PostEntity.hbm.xml"/>
+
+        <mapping class="com.sam.pojo.WriteEntity"/>
+        <mapping resource="WriteEntity.hbm.xml"/>
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

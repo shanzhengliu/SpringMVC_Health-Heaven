@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.sam.pojo.FoodExpenseEntity" table="5619_FoodExpense" schema="elec5619">
+        <id name="foodExpenseId">
+            <column name="FoodExpense_ID" sql-type="int(11)"/>
+        </id>
+        <property name="foodname">
+            <column name="foodname" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="type">
+            <column name="type" sql-type="text"/>
+        </property>
+        <property name="cost">
+            <column name="cost" sql-type="float" precision="-1"/>
+        </property>
+    </class>
+</hibernate-mapping>
